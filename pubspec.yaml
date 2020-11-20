@@ -1,0 +1,136 @@
+name: diinsel
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+  # For Svg Images
+  flutter_svg: ^0.19.0
+  # For Navigation Transitions
+  page_transition: ^1.1.7+3
+# For changing status bar color
+  flutter_statusbarcolor: ^0.2.3
+  # For cards carousel
+  carousel_slider: ^2.3.1
+  # For masking string values
+  mask_text_input_formatter: ^1.0.7
+  # For StateManagement
+  get_it:
+  stacked:
+  # For gradient text
+  gradient_text: ^1.0.2
+  # slidable item
+  flutter_slidable: ^0.5.7
+#  # woocommerce
+#  woocommerce: ^0.9.7
+  dio: ^3.0.10
+  nuts_activity_indicator: ^0.1.1
+dev_dependencies:
+  flutter_launcher_icons: "^0.8.1"
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+    android: true
+    ios: true
+    image_path: "assets/icons/app_icon.jpg"
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: black
+      fonts:
+       - asset: assets/fonts/Poppins_Black.otf
+
+    - family: bold
+      fonts:
+        - asset: assets/fonts/Poppins_Bold.otf
+
+    - family: extraBold
+      fonts:
+        - asset: assets/fonts/Poppins_ExtraBold.otf
+
+    - family: extraLight
+      fonts:
+        - asset: assets/fonts/Poppins_ExtraLight.otf
+
+    - family: light
+      fonts:
+        - asset: assets/fonts/Poppins_Light.otf
+
+    - family: medium
+      fonts:
+        - asset: assets/fonts/Poppins_Medium.otf
+
+    - family: regular
+      fonts:
+        - asset: assets/fonts/Poppins_Regular.otf
+
+    - family: semiBold
+      fonts:
+        - asset: assets/fonts/Poppins_SemiBold.otf
+
+    - family: thin
+      fonts:
+        - asset: assets/fonts/Poppins_Thin.otf
+
+    - family: worksans_black
+      fonts:
+        - asset: assets/fonts/WorkSans_Black.otf
+
+    - family: worksans_bold
+      fonts:
+        - asset: assets/fonts/WorkSans_Bold.otf
+
+    - family: worksans_extra_bold
+      fonts:
+         - asset: assets/fonts/WorkSans_ExtraBold.otf
+
+    - family: worksans_light
+      fonts:
+         - asset: assets/fonts/WorkSans_Light.otf
+
+    - family: worksans_medium
+      fonts:
+        - asset: assets/fonts/WorkSans_Medium.otf
+
+    - family: worksans_regular
+      fonts:
+        - asset: assets/fonts/WorkSans_Regular.otf
+
+    - family: worksans_semi_bold
+      fonts:
+         - asset: assets/fonts/WorkSans_SemiBold.otf
+
+    - family: worksans_thin
+      fonts:
+        - asset: assets/fonts/WorkSans_Thin.otf
+
+    - family: asap_bold
+      fonts:
+        - asset: assets/fonts/Asap_Bold.otf
+
+    - family: asap_medium
+      fonts:
+         - asset: assets/fonts/Asap_Medium.otf
+
+    - family: asap_regular
+      fonts:
+        - asset: assets/fonts/Asap_Regular.otf
+
+    - family: abel_regular
+      fonts:
+        - asset: assets/fonts/Abel_Regular.ttf

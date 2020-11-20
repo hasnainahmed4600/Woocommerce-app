@@ -1,0 +1,44 @@
+
+import 'package:diinsel/utils/color_utils.dart';
+import 'package:diinsel/utils/gradient_utils.dart';
+import 'package:diinsel/utils/text_style_utils.dart';
+import 'package:flutter/material.dart';
+import 'package:diinsel/utils/extensions.dart';
+class RoundedPurpleButton extends StatelessWidget {
+  final String buttonText;
+  final bool isBusy;
+  final VoidCallback onButtonPressed;
+  final TextStyle textStyle;
+  final double horizontalMargin;
+  final height;
+  final double bottomMargin;
+  final double topMargin;
+  const RoundedPurpleButton({Key key, this.buttonText, this.onButtonPressed, this.isBusy, this.textStyle, this.horizontalMargin, this.bottomMargin, this.topMargin, this.height}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(left: horizontalMargin??0,right: horizontalMargin??0,top: topMargin??0,bottom: bottomMargin??0),
+      child: RaisedButton(
+        onPressed: isBusy? null : onButtonPressed,
+        padding: const EdgeInsets.all(0.0),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+        child: Ink(
+          decoration:  BoxDecoration(
+            gradient: GradientUtils.mainGradient,
+            borderRadius: BorderRadius.circular(50),
+          ),
+          child: Container(
+            constraints: BoxConstraints(minWidth: double.infinity, minHeight: height?? 7.2.toHeight(),maxHeight: height??7.2.toHeight()), // min sizes for Material buttons
+            alignment: Alignment.center,
+            child: isBusy? SizedBox(height: 5.toImage(),width: 5.toImage(),
+                child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation(Colors.white),)):
+            Center(
+              child: Text(buttonText,style: textStyle?? TextStyleUtils().buttonTextStyle,
+              ),
+            ) ,
+          ),
+        ),
+      ),
+    );
+  }
+}
